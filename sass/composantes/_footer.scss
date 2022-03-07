@@ -1,3 +1,75 @@
+/*
+<footer class="site__footer">
+    <!-- première rangé de colonne -->
+    <div class="site__footer__colonne">
+        <section class="footer__article">
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
+        </section>
+        <section class="footer__adresse">
+            jjkjk jkjk jkb jkbjk bjk bjk bkbjk j
+        </section>
+        <sectio
+         class="footer__liens">
+        <?php w
+        _nav_menu(array(
+               
+        "menu"=>"externe")); ?>
+        </secti
+        n>
+    </div>
+    <!-- sectio
+     de plusieurs lignes -->
+    <div class=
+    site__footer__ligne">
+        <sectio
+         class="footer__description"></section>
+        <sectio
+         class="footer__nav"></section>
+        <sectio
+         class="copyright"></section>
+        <sectio
+         class="footer__auteur"></section>
+    </div>
+*/
+
+.site__footer {
+  display : flex;
+  flex-direction: column;
+  &__colonne{
+    display : flex;
+    justify-content: space-between;
+    section {
+      display : flex;
+      flex-direction: column;
+      border : 1px solid #ddd;
+      flex : 0 0 30%;
+    }
+    .footer__article{}
+    .footer__lien{}
+    .footer__adresse{}
+  
+  } 
+
+  &__ligne{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;

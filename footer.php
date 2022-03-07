@@ -1,4 +1,35 @@
 <footer class="site__footer">
+    <!-- première rangé de colonne -->
+    <div class="site__footer__colonne">
+        <section class="footer__article">
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
+        </section>
+        <section class="footer__adresse">
+            jjkjk jkjk jkb jkbjk bjk bjk bkbjk j
+        </section>
+        <section class="footer__liens">
+        <?php wp_nav_menu(array(
+                    "menu"=>"externe")); ?>
+        </section>
+    </div>
+    <!-- section de plusieurs lignes -->
+    <div class="site__footer__ligne">
+        <section class="footer__description"></section>
+        <section class="footer__nav"></section>
+        <section class="copyright"></section>
+        <section class="footer__auteur"></section>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <h2 class="footer__titre">Le beau footer</h2>
     <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author">Fait par Florence Lemieux Cayer</h3>
