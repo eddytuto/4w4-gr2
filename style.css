@@ -567,11 +567,13 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 
 @media screen and (min-width: 700px) {
   .util {
     margin-left: auto;
+    width: 350px;
   }
 }
 
@@ -581,7 +583,7 @@ COMPOSANTES
   transform: rotate(0);
   z-index: 99;
   left: 10px;
-  top: 10px;
+  top: 30px;
 }
 
 #chk-burger {
@@ -626,6 +628,12 @@ COMPOSANTES
     display: block;
   }
   /* ----------------------------------------- */
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
+  }
 }
 
 /*
@@ -754,6 +762,15 @@ COMPOSANTES
   color: #000;
 }
 
+.wp_recherche .wp-block-search__button {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=search");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0;
+  width: 30px;
+  height: 35px;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -839,6 +856,11 @@ theme name: Lab 2 Lemieux Florence
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
