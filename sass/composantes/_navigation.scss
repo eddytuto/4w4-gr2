@@ -3,6 +3,10 @@
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
+    z-index : 99;
+    left : 10px;
+    top : 10px;
+
 }
 
 #chk-burger {
@@ -25,6 +29,7 @@
     list-style-type: none;
     margin : 0;
     padding :0;
+    padding-top : 40px;
 }
 .menu-item{
     margin:0;
@@ -41,12 +46,15 @@
 }
 
 @media screen and (min-width : $largeur__media--tablette){
-    #burger {
+   .site #burger {
         display : none;
     }
-    .menu-principal-container {
+    .site .menu-principal-container {
         display : block;
     }
+    /* ----------------------------------------- */
+
+
 
 }
 

@@ -2,10 +2,19 @@
     background-color: rgba(#000, .1);
     width : 300px;
     position : relative;
+
     &__input{
         background-color: transparent;
         width : 100%;
+        transition : background-color .25s;
+        border : none;
+        outline: none;
+        &:focus {
+           background-color: rgba(#000, .2); 
+        }
     }
+
+
 
     &__bouton{
         position : absolute;
@@ -16,7 +25,7 @@
         justify-content: center;
 
         svg{
-
+            color : #000;
         }
     }
 
