@@ -5,7 +5,7 @@
     transform : rotate(0);
     z-index : 99;
     left : 10px;
-    top : 10px;
+    top : 30px;
 
 }
 
@@ -53,7 +53,12 @@
         display : block;
     }
     /* ----------------------------------------- */
-
+    .home #burger {
+        display : block;
+    }
+    .home .menu-principal-container {
+        display : none;
+    }
 
 
 }
