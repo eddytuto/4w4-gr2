@@ -19,10 +19,21 @@
     &__liste {
         display: flex;
         flex-wrap: wrap;
+
+        .web{
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold'); 
+        }
+        .jeu{}
+        .design{}
+        .creation-3d{}
+        .utilitaire{}
+        .video{}
     }
     
     &__cours {
         background-color: $color__background-cours;
+        background-position: 97% 3%;
+        background-repeat: no-repeat;
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
         border-radius: 5px;
         margin: 10px;
@@ -60,3 +71,5 @@
 .cours__description {
     font-size: 1rem;
 }
+
+
