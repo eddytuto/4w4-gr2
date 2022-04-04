@@ -645,6 +645,49 @@ COMPOSANTES
   }
 }
 
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+}
+
+.menu-accueil-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6286c8;
+  flex: 0 0 20%;
+  height: 175px;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(1rem, 2vw, 2.2rem);
+  color: #ffe600;
+  height: 100%;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: auto;
+}
+
 /* -------------------------------------------------
 Navigation catégorie cours
 ---------------------------------------------------- */
