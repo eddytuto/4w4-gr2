@@ -12,6 +12,7 @@ Navigation catégorie cours
                     color: $color__bouton__color;
 
                 }
+   
             &:hover {
                 background-color: $color__bouton__background--hover;
                 a{
@@ -19,7 +20,13 @@ Navigation catégorie cours
 
                 }
             }
-        }
+        } // fin .menu-item
+        .current-menu-item {
+            background-color: $color__bouton__background--current;
+            a{
+                color: $color__bouton__color--current;
+            }
+        } 
 
     }
 }
