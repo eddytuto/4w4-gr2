@@ -6,10 +6,12 @@ $categories = get_the_category();
 <article class="formation__cours <?php echo $categories[1]->slug; ?>">
     <?php
     $titre = get_the_title();
-    $titreFiltreCours = substr($titre, 7, -6);
+    // 582-1w1 Mise en page Web (75h)
+    // 1w1 Mise en page Web
+    $titreFiltreCours = substr($titre, 3, -6);
     // $nbHeures = substr($titre, -6);
     $nbHeures = get_field( "nombre_dheures" );
-    $sigleCours = substr($titre, 0, 7);
+    $sigleCours = substr($titre, 0, 4);
     $descCours = get_the_excerpt();
     ?>
     <?php the_post_thumbnail("thumbnail") ?>
