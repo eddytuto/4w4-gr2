@@ -863,6 +863,22 @@ Navigation catégorie cours
   background-color: #8cbccf;
 }
 
+.boite__modale {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  border: 5px solid #aaa;
+  background-color: #f00;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+
+.boite__modale:hover {
+  transform: scale(1);
+}
+
 .recherche {
   background-color: rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -942,6 +958,7 @@ theme name: Lab 2 Lemieux Florence
 .site {
   background-color: #dae0f1;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 .home::after {
