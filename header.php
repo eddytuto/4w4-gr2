@@ -11,19 +11,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php wp_head() ?>
-    <!-- style>
+    <!-- Style du customizer -->
+    <style>
+         /* change la le background-color du clip-path dans .home::after qui un pseudo élément du body pour la page d'accueil */
         .home::after{
-            background-color: ;
+            background-color: <?= get_theme_mod("background_clippath"); ?>;
         }
-
+        /* change la le background-color du body */
+        .site {
+            background-color: <?= get_theme_mod("background_body"); ?>;
+        }
+        /*
         .site__main {
             background-color: ;
         }
-    </style -->
+        */
+    </style>
 
     <?php show_admin_bar(true); ?>
 </head>
-<body  <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body"); ?>;" >
+<body  <?php body_class("site"); ?> >
 <header class="site__header">
     <section class="site__header__titre">
         <?= get_custom_logo(); ?>
