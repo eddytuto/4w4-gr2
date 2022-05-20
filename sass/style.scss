@@ -26,6 +26,7 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balises";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -37,12 +38,16 @@ COMPOSANTES
 @import "composantes/navigation_categorie_cours";
 @import "composantes/footer";
 @import "composantes/404";
-// @import "composantes/cours";
+@import "composantes/evenement";
+@import "composantes/boite_modale";
+@import "composantes/galerie";
 @import "composantes/recherche";
+@import "composantes/accueil";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
+@import "animation/burger";
 
 /* ---------------------------------------------------------
 LAYOUT

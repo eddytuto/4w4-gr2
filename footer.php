@@ -46,6 +46,16 @@ wp_nav_menu(array(
                     "link_before"=>$icone)); ?>
                     <?php get_search_form(); ?>
 </footer>
+
+<div class="boite__modale">
+    <button class="boite__modale__fermeture">X</button>
+    <p class="boite__modale__texte"></p>
+</div>
+<div class="boite__carrousel">
+    <button class="boite__carrousel__fermeture">X</button>
+    <section class="boite__carrousel__navigation"></section>
+    <section class="boite__carrousel__img"></section>
+</div>
 <?php wp_footer(); ?>
 </body>
 
